@@ -1,0 +1,4 @@
+first_name,last_name,email,track,parent_email,slug
+Ada,Lovelace,ada.example@gmail.com,A,parent.ada@gmail.com,a1b2c3d4e5f6
+Marie,Curie,marie.example@gmail.com,B,parent.marie@gmail.com,b2c3d4e5f6a7
+Alan,Turing,alan.example@densesparse.com,C,,c3d4e5f6a7b8

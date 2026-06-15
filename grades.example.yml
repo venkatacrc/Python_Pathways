@@ -1,0 +1,24 @@
+# grades.example.yml — example. Copy to grades.yml (gitignored) before running update_wallet.py.
+#
+# Each student is keyed by "First Last" exactly as in roster.csv.
+# - quizzes:     7 floats; per-week earned $; use 0 for not-yet-attempted
+# - assignments: 7 floats; per-week earned $; use 0 for not-yet-attempted
+# - capstone:    one float; max $12.50
+
+"Ada Lovelace":
+  track: A
+  quizzes:     [1.00, 1.00, 0.50, 0.00, 0.00, 0.00, 0.00]
+  assignments: [1.50, 1.50, 1.50, 0.00, 0.00, 0.00, 0.00]
+  capstone:    0.00
+
+"Marie Curie":
+  track: B
+  quizzes:     [1.00, 0.50, 1.00, 0.00, 0.00, 0.00, 0.00]
+  assignments: [1.50, 1.50, 0.00, 0.00, 0.00, 0.00, 0.00]
+  capstone:    0.00
+
+"Alan Turing":
+  track: C
+  quizzes:     [1.00, 1.00, 1.00, 0.00, 0.00, 0.00, 0.00]
+  assignments: [1.50, 1.50, 1.50, 0.00, 0.00, 0.00, 0.00]
+  capstone:    0.00

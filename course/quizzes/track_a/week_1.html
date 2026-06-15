@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Track A — Week 1 Quiz: Hello, Python!</title>
+  <link rel="stylesheet" href="../../assets/css/extra.css" />
+  <style>
+    body {
+      font-family: -apple-system, "Inter", "Helvetica Neue", Arial, sans-serif;
+      max-width: 820px; margin: 0 auto; padding: 24px;
+      background: #fafafa; color: #212121;
+    }
+    @media (prefers-color-scheme: dark) {
+      body { background: #0d0d10; color: #e0e0e0; }
+    }
+    .nav-back { display: inline-block; margin-bottom: 16px; }
+    h1, h2 { margin-top: 0; }
+    .md-button {
+      display: inline-block; padding: 6px 14px; border-radius: 4px;
+      background: #3F51B5; color: white; border: none; cursor: pointer;
+      font-size: 0.95rem; text-decoration: none;
+    }
+    .md-button:hover { background: #303F9F; }
+    .md-button--primary { background: #FF7043; }
+    .md-button--primary:hover { background: #E64A19; }
+  </style>
+</head>
+<body>
+  <a class="nav-back" href="../index.html">&larr; Back to all quizzes</a>
+  <div id="quiz-root" class="quiz"></div>
+
+  <script type="application/json" id="quiz-data">
+{
+  "title": "Track A \u2014 Week 1 Quiz: Hello, Python!",
+  "track": "A",
+  "week": 1,
+  "time_limit_min": 15,
+  "shuffle": true,
+  "no_backtrack": true,
+  "passing_pct": 70,
+  "submit_url": "https://forms.gle/REPLACE_WITH_REAL_FORM",
+  "questions": [
+    {
+      "q": "Which line will print exactly: Hello, Sparky!?",
+      "options": [
+        "print(Hello, Sparky!)",
+        "print(\"Hello, Sparky!\")",
+        "Print(\"Hello, Sparky!\")",
+        "print \"Hello, Sparky!\""
+      ],
+      "answer": 1,
+      "level": "easy"
+    },
+    {
+      "q": "What does input() do?",
+      "options": [
+        "Prints something on the screen",
+        "Asks the user a question and waits for them to type an answer",
+        "Closes the program",
+        "Imports a library"
+      ],
+      "answer": 1,
+      "level": "easy"
+    },
+    {
+      "q": "After pet = \"cat\", what does print(pet) show?",
+      "options": [
+        "pet",
+        "\"cat\"",
+        "cat",
+        "Nothing"
+      ],
+      "answer": 2,
+      "level": "easy"
+    },
+    {
+      "q": "Which symbol means \"multiply\" in Python?",
+      "options": [
+        "x",
+        "*",
+        "\u00d7",
+        "m"
+      ],
+      "answer": 1,
+      "level": "easy"
+    },
+    {
+      "q": "What does print(\"ha\" * 3) print?",
+      "options": [
+        "ha 3",
+        "hahaha",
+        "ha * 3",
+        "Error"
+      ],
+      "answer": 1,
+      "level": "easy"
+    },
+    {
+      "q": "What does this code print?\n\n    age = 10\n    age = age + 1\n    print(age)\n",
+      "options": [
+        "age",
+        "10",
+        "11",
+        "age + 1"
+      ],
+      "answer": 2,
+      "level": "medium"
+    },
+    {
+      "q": "What does print(7 // 2) print?",
+      "options": [
+        "3.5",
+        "3",
+        "4",
+        "Error"
+      ],
+      "answer": 1,
+      "level": "medium"
+    },
+    {
+      "q": "Which line uses an f-string correctly?",
+      "options": [
+        "print(\"Hi, name\")",
+        "print(\"Hi, \" + name)",
+        "print(f\"Hi, {name}\")",
+        "print(f\"Hi, name\")"
+      ],
+      "answer": 2,
+      "level": "medium"
+    },
+    {
+      "q": "The turtle is at (0,0) facing right. After t.forward(50); t.left(90); t.forward(50), where is it?",
+      "options": [
+        "(50, 0)",
+        "(50, 50)",
+        "(100, 0)",
+        "(0, 50)"
+      ],
+      "answer": 1,
+      "level": "hard"
+    },
+    {
+      "q": "What does this code print? (User types: Sparky)\n\n    name = input(\"Name? \")\n    print(\"Hi\", name + name)\n",
+      "options": [
+        "Hi Sparky",
+        "Hi SparkySparky",
+        "Hi Sparky Sparky",
+        "Error"
+      ],
+      "answer": 1,
+      "level": "hard"
+    }
+  ]
+}
+  </script>
+  <script src="../../assets/js/quiz.js"></script>
+</body>
+</html>

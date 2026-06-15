@@ -1,0 +1,109 @@
+title: "Track A — Week 1 Quiz: Hello, Python!"
+track: A
+week: 1
+time_limit_min: 15
+shuffle: true
+no_backtrack: true
+passing_pct: 70
+submit_url: "https://forms.gle/REPLACE_WITH_REAL_FORM"
+
+questions:
+
+  - q: "Which line will print exactly: Hello, Sparky!?"
+    options:
+      - "print(Hello, Sparky!)"
+      - 'print("Hello, Sparky!")'
+      - 'Print("Hello, Sparky!")'
+      - 'print "Hello, Sparky!"'
+    answer: 1
+    level: easy
+
+  - q: "What does input() do?"
+    options:
+      - "Prints something on the screen"
+      - "Asks the user a question and waits for them to type an answer"
+      - "Closes the program"
+      - "Imports a library"
+    answer: 1
+    level: easy
+
+  - q: 'After pet = "cat", what does print(pet) show?'
+    options:
+      - "pet"
+      - '"cat"'
+      - "cat"
+      - "Nothing"
+    answer: 2
+    level: easy
+
+  - q: 'Which symbol means "multiply" in Python?'
+    options:
+      - "x"
+      - "*"
+      - "×"
+      - "m"
+    answer: 1
+    level: easy
+
+  - q: 'What does print("ha" * 3) print?'
+    options:
+      - "ha 3"
+      - "hahaha"
+      - "ha * 3"
+      - "Error"
+    answer: 1
+    level: easy
+
+  - q: |
+      What does this code print?
+
+          age = 10
+          age = age + 1
+          print(age)
+    options:
+      - "age"
+      - "10"
+      - "11"
+      - "age + 1"
+    answer: 2
+    level: medium
+
+  - q: "What does print(7 // 2) print?"
+    options:
+      - "3.5"
+      - "3"
+      - "4"
+      - "Error"
+    answer: 1
+    level: medium
+
+  - q: "Which line uses an f-string correctly?"
+    options:
+      - 'print("Hi, name")'
+      - 'print("Hi, " + name)'
+      - 'print(f"Hi, {name}")'
+      - 'print(f"Hi, name")'
+    answer: 2
+    level: medium
+
+  - q: "The turtle is at (0,0) facing right. After t.forward(50); t.left(90); t.forward(50), where is it?"
+    options:
+      - "(50, 0)"
+      - "(50, 50)"
+      - "(100, 0)"
+      - "(0, 50)"
+    answer: 1
+    level: hard
+
+  - q: |
+      What does this code print? (User types: Sparky)
+
+          name = input("Name? ")
+          print("Hi", name + name)
+    options:
+      - "Hi Sparky"
+      - "Hi SparkySparky"
+      - "Hi Sparky Sparky"
+      - "Error"
+    answer: 1
+    level: hard

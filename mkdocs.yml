@@ -1,0 +1,182 @@
+site_name: "Python Pathways: From Zero to Builder"
+site_description: "A 7-week, 3-track Python course taught by Venkata Chintapalli at Dense Sparse, Inc."
+site_author: "Venkata Chintapalli"
+site_url: "https://densesparse.github.io/python-pathways/"
+
+repo_name: "densesparse/python-pathways"
+repo_url: "https://github.com/densesparse/python-pathways"
+edit_uri: ""
+
+docs_dir: course
+site_dir: _site
+
+theme:
+  name: material
+  custom_dir: overrides
+  language: en
+  font:
+    text: Inter
+    code: JetBrains Mono
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+    - content.tooltips
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: deep orange
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: deep orange
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+  icon:
+    repo: fontawesome/brands/github
+    logo: material/school-outline
+  favicon: assets/favicon.ico
+
+extra_css:
+  - assets/css/extra.css
+
+extra_javascript:
+  - assets/js/unlock.js
+  - assets/js/quiz.js
+
+not_in_nav: |
+  /wallets/*.md
+  /certificates/*
+
+validation:
+  nav:
+    omitted_files: warn
+    not_found: warn
+    absolute_links: warn
+  links:
+    not_found: warn
+    anchors: warn
+    absolute_links: warn
+    unrecognized_links: warn
+
+plugins:
+  - search:
+      lang: en
+  - awesome-pages
+
+extra:
+  course:
+    name: "Python Pathways: From Zero to Builder"
+    org: "Dense Sparse, Inc."
+    instructor: "Venkata Chintapalli"
+    instructor_email: "venkata@densesparse.com"
+    cohort: "Summer 2026"
+    first_session: "2026-06-16"
+    last_session: "2026-07-30"
+    cert_day: "2026-08-03"
+  social:
+    - icon: fontawesome/solid/envelope
+      link: mailto:venkata@densesparse.com
+    - icon: fontawesome/brands/github
+      link: https://github.com/densesparse/python-pathways
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+      toc_depth: 3
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+nav:
+  - Home: index.md
+  - Setup & Onboarding:
+    - "Instructor — GitHub Pages Setup": 01_github_pages_setup.md
+    - "Parent Onboarding": 02_parent_onboarding.md
+    - "Student Invitation Templates": 03_invitation_emails.md
+  - "Track A — 5th Graders":
+    - "Overview": 04_lesson_plans/track_a_5th/index.md
+    - "Week 1 — Hello, Python!": 04_lesson_plans/track_a_5th/week_1.md
+    - "Week 2 — Decisions & Loops": 04_lesson_plans/track_a_5th/week_2.md
+    - "Week 3 — Functions & First Pygame Window": 04_lesson_plans/track_a_5th/week_3.md
+    - "Week 4 — Sprites & Keyboard Control": 04_lesson_plans/track_a_5th/week_4.md
+    - "Week 5 — Collision & Scoring": 04_lesson_plans/track_a_5th/week_5.md
+    - "Week 6 — Polish Your Game": 04_lesson_plans/track_a_5th/week_6.md
+    - "Week 7 — SHOWCASE": 04_lesson_plans/track_a_5th/week_7.md
+    - "Office Hours Agendas": 05_office_hours/track_a.md
+  - "Track B — 10th Graders":
+    - "Overview": 04_lesson_plans/track_b_10th/index.md
+    - "Week 1 — Python for Science": 04_lesson_plans/track_b_10th/week_1.md
+    - "Week 2 — Exploring Patient Data": 04_lesson_plans/track_b_10th/week_2.md
+    - "Week 3 — Visualization": 04_lesson_plans/track_b_10th/week_3.md
+    - "Week 4 — Statistics": 04_lesson_plans/track_b_10th/week_4.md
+    - "Week 5 — BioPython": 04_lesson_plans/track_b_10th/week_5.md
+    - "Week 6 — The Risk Tool": 04_lesson_plans/track_b_10th/week_6.md
+    - "Week 7 — SHOWCASE": 04_lesson_plans/track_b_10th/week_7.md
+    - "Office Hours Agendas": 05_office_hours/track_b.md
+  - "Track C — Professionals":
+    - "Overview": 04_lesson_plans/track_c_pro/index.md
+    - "Week 1 — train0.py: Bigram baseline": 04_lesson_plans/track_c_pro/week_1.md
+    - "Week 2 — train1.py: MLP + manual backprop": 04_lesson_plans/track_c_pro/week_2.md
+    - "Week 3 — train2.py: Value autograd": 04_lesson_plans/track_c_pro/week_3.md
+    - "Week 4 — train3.py: Embeddings + 1-head attention": 04_lesson_plans/track_c_pro/week_4.md
+    - "Week 5 — train4.py: Multi-head + LayerNorm": 04_lesson_plans/track_c_pro/week_5.md
+    - "Week 6 — train5.py: Adam → microGPT": 04_lesson_plans/track_c_pro/week_6.md
+    - "Week 7 — SHOWCASE": 04_lesson_plans/track_c_pro/week_7.md
+    - "Office Hours Agendas": 05_office_hours/track_c.md
+  - Quizzes:
+    - quizzes/index.md
+  - Wallets:
+    - wallets/index.md
+  - Certificates:
+    - certificates/index.md
+  - Reference:
+    - "Capstone Rubrics": 06_capstone_rubrics.md
+    - "Open-Source Resources": 08_resources.md
+    - "Pedagogy (Oakley)": 09_oakley_guide.md
+    - "Migration Notes (Canvas → GH Pages)": MIGRATION.md
