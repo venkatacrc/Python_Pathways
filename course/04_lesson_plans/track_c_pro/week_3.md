@@ -180,38 +180,38 @@ Full credit on completion.
 **Easy (5)**
 
 1. To overload `+` for a class, you implement:
-   - A) `add(self, other)` · B) `__add__(self, other)` ✅ · C) `__plus__` · D) `+=`
+   - A) `add(self, other)` · B) `__add__(self, other)` · C) `__plus__` · D) `+=`
 
 2. After `out.backward()`, the gradient of every leaf `Value` is:
-   - A) Always 0 · B) Computed via reversed topo sort with chain rule ✅ · C) Random · D) Equal to data
+   - A) Always 0 · B) Computed via reversed topo sort with chain rule · C) Random · D) Equal to data
 
 3. Topological sort visits each node:
-   - A) Twice · B) Once, after all its children ✅ · C) Never · D) In random order
+   - A) Twice · B) Once, after all its children · C) Never · D) In random order
 
 4. `Value(3) ** 2` should produce a Value with `data=`:
-   - A) 6 · B) 9 ✅ · C) 5 · D) 1
+   - A) 6 · B) 9 · C) 5 · D) 1
 
 5. The `_backward` closure on each Value is responsible for:
-   - A) Forward computation · B) Adding the *local* gradient contributions to its parents ✅ · C) Garbage collection · D) Topo sort
+   - A) Forward computation · B) Adding the *local* gradient contributions to its parents · C) Garbage collection · D) Topo sort
 
 **Medium (3)**
 
 6. Why must we *accumulate* gradients (`+=`) rather than assign?
-   - A) For style · B) Because a parameter may participate in multiple paths in the graph and contributions must sum ✅ · C) For speed · D) Required by Python
+   - A) For style · B) Because a parameter may participate in multiple paths in the graph and contributions must sum · C) For speed · D) Required by Python
 
 7. The graph stored in `_prev` enables:
-   - A) Forward pass only · B) Topological backward pass ✅ · C) Repeated forward · D) Pickling
+   - A) Forward pass only · B) Topological backward pass · C) Repeated forward · D) Pickling
 
 8. Calling `backward()` twice on the same loss without zeroing:
-   - A) Doubles all grads ✅ (gradients accumulate) · B) Errors · C) Resets · D) Has no effect
+   - A) Doubles all grads (gradients accumulate) · B) Errors · C) Resets · D) Has no effect
 
 **Hard (2)**
 
 9. *(Week 1 review)* On Tiny Shakespeare, vocab includes:
-   - A) Just lowercase letters · B) Letters (both cases), digits, punctuation, whitespace ✅ · C) Words · D) Bytes
+   - A) Just lowercase letters · B) Letters (both cases), digits, punctuation, whitespace · C) Words · D) Bytes
 
 10. *(Week 1 review)* Why does the bigram model never produce coherent words?
-    - A) Wrong dataset · B) It can only condition on the immediately previous character ✅ · C) Smoothing too high · D) Vocab too small
+    - A) Wrong dataset · B) It can only condition on the immediately previous character · C) Smoothing too high · D) Vocab too small
 
 ### Answer Key
 1.B  2.B  3.B  4.B  5.B  6.B  7.B  8.A  9.B  10.B

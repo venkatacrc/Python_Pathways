@@ -151,19 +151,19 @@ Assignment W4 — give your character a *story*.
 **Easy (5)**
 
 1. To check if the LEFT arrow is held down:
-   - A) `keys[pygame.LEFT]` · B) `keys[pygame.K_LEFT]` ✅ · C) `keys.LEFT` · D) `keys.left()`
+   - A) `keys[pygame.LEFT]` · B) `keys[pygame.K_LEFT]` · C) `keys.LEFT` · D) `keys.left()`
 
 2. What does `colors.append("yellow")` do?
-   - A) Removes "yellow" · B) Adds "yellow" to the end of the list ✅ · C) Sorts the list · D) Replaces all colors
+   - A) Removes "yellow" · B) Adds "yellow" to the end of the list · C) Sorts the list · D) Replaces all colors
 
 3. `len([1, 2, 3, 4])` returns:
-   - A) 3 · B) 4 ✅ · C) 5 · D) 0
+   - A) 3 · B) 4 · C) 5 · D) 0
 
 4. The `__init__` method of a class is the:
-   - A) destructor · B) constructor (runs when you make a new object) ✅ · C) drawer · D) saver
+   - A) destructor · B) constructor (runs when you make a new object) · C) drawer · D) saver
 
 5. Which is **NOT** a list?
-   - A) `[1, 2, 3]` · B) `["a", "b"]` · C) `(1, 2, 3)` ✅ · D) `[]`
+   - A) `[1, 2, 3]` · B) `["a", "b"]` · C) `(1, 2, 3)` · D) `[]`
 
 **Medium (3)**
 
@@ -175,13 +175,13 @@ Assignment W4 — give your character a *story*.
        total += n
    print(total)
    ```
-   - A) 10 · B) 30 · C) 60 ✅ · D) `[10, 20, 30]`
+   - A) 10 · B) 30 · C) 60 · D) `[10, 20, 30]`
 
 7. In a class, `self` refers to:
-   - A) The class itself · B) The current object/instance ✅ · C) The screen · D) Pygame
+   - A) The class itself · B) The current object/instance · C) The screen · D) Pygame
 
 8. To keep a player from leaving the right edge of a 640-wide window (player size 30):
-   - A) `if x > 640: x = 640` · B) `if x > 610: x = 610` ✅ (if x is the left edge of the player) · C) `if x < 0: x = 0` · D) `if x > 30: x = 30`
+   - A) `if x > 640: x = 640` · B) `if x > 610: x = 610` (if x is the left edge of the player) · C) `if x < 0: x = 0` · D) `if x > 30: x = 30`
 
 **Hard (2)**
 
@@ -191,8 +191,7 @@ Assignment W4 — give your character a *story*.
        for j in range(2):
            print(i, j)
    ```
-   - A) 6 lines: `0 0, 0 1, 1 0, 1 1, 2 0, 2 1` ✅
-   - B) 3 lines · C) 2 lines · D) 5 lines
+   - A) 6 lines: `0 0, 0 1, 1 0, 1 1, 2 0, 2 1`   - B) 3 lines · C) 2 lines · D) 5 lines
 
 10. *(Week 2 review)*
     ```python
@@ -203,7 +202,7 @@ Assignment W4 — give your character a *story*.
     else:             print("D")
     ```
     What prints?
-    - A) `A` · B) `B` ✅ · C) `C` · D) `D`
+    - A) `A` · B) `B` · C) `C` · D) `D`
 
 ### Answer Key
 1.B  2.B  3.B  4.B  5.C  6.C  7.B  8.B  9.A  10.B

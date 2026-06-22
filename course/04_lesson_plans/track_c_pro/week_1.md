@@ -127,40 +127,38 @@ Each pro extends `train0.py` to support `n=2,3` via a CLI flag. Compute perplexi
 **Easy (5)**
 
 1. Tiny Shakespeare's vocabulary size is approximately:
-   - A) ~26 · B) ~65 ✅ (lowercase + uppercase + punctuation + whitespace) · C) ~256 · D) ~10000
+   - A) ~26 · B) ~65 (lowercase + uppercase + punctuation + whitespace) · C) ~256 · D) ~10000
 
 2. `defaultdict(Counter)` gives you, for any new key:
-   - A) An empty Counter that you can `+=` into ✅ · B) None · C) An error · D) Zero
+   - A) An empty Counter that you can `+=` into · B) None · C) An error · D) Zero
 
 3. `random.choices(items, weights=w, k=1)` returns:
-   - A) A length-1 list with a sample drawn proportionally to `w` ✅ · B) An int · C) The same item every time · D) An error
+   - A) A length-1 list with a sample drawn proportionally to `w` · B) An int · C) The same item every time · D) An error
 
 4. `for a, b in zip(text, text[1:])` iterates:
-   - A) Adjacent character pairs of `text` ✅ · B) Just text · C) Reversed pairs · D) Skips every other
+   - A) Adjacent character pairs of `text` · B) Just text · C) Reversed pairs · D) Skips every other
 
 5. The bigram model fails on Shakespeare primarily because:
-   - A) Wrong tokenizer · B) It can only condition on the immediate previous character — no longer-range structure ✅ · C) Too much data · D) GPU not used
+   - A) Wrong tokenizer · B) It can only condition on the immediate previous character — no longer-range structure · C) Too much data · D) GPU not used
 
 **Medium (3)**
 
 6. Add-1 (Laplace) smoothing is needed to:
-   - A) Speed up training · B) Prevent log(0) and assign nonzero probability to unseen pairs ✅ · C) Compress the data · D) Increase variance
+   - A) Speed up training · B) Prevent log(0) and assign nonzero probability to unseen pairs · C) Compress the data · D) Increase variance
 
 7. Perplexity equals:
-   - A) `mean of log probs` · B) `exp(-mean log prob)` ✅ · C) Cross-entropy times 2 · D) Vocab size
+   - A) `mean of log probs` · B) `exp(-mean log prob)` · C) Cross-entropy times 2 · D) Vocab size
 
 8. Memory cost of an `n`-gram count table is roughly:
-   - A) O(N · V) · B) O(V^n) ✅ · C) O(1) · D) O(log N)
+   - A) O(N · V) · B) O(V^n) · C) O(1) · D) O(log N)
 
 **Hard (2)**
 
 9. Why use character-level rather than word-level for the baseline?
-   - A) Smaller vocab + simpler tokenizer; demonstrates the math without BPE complexity ✅
-   - B) It's faster · C) Words are illegal · D) It uses less RAM (N is the same)
+   - A) Smaller vocab + simpler tokenizer; demonstrates the math without BPE complexity   - B) It's faster · C) Words are illegal · D) It uses less RAM (N is the same)
 
 10. The bigram with no smoothing assigns probability **0** to:
-    - A) Pairs that never appeared in the corpus ✅
-    - B) All pairs · C) The first character only · D) Stop tokens
+    - A) Pairs that never appeared in the corpus    - B) All pairs · C) The first character only · D) Stop tokens
 
 ### Answer Key
 1.B  2.A  3.A  4.A  5.B  6.B  7.B  8.B  9.A  10.A

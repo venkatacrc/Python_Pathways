@@ -74,43 +74,42 @@ Instructor uses Capstone Rubric (Artifact 6) live, scoring each section as the s
 **Easy (5)**
 
 1. The function `pygame.display.flip()` does:
-   - A) Flips the window upside-down · B) Updates the screen with everything you drew this frame ✅ · C) Closes the game · D) Saves the game
+   - A) Flips the window upside-down · B) Updates the screen with everything you drew this frame · C) Closes the game · D) Saves the game
 
 2. To restart your game after game-over, you reset the state variable to:
-   - A) `"reset"` · B) `"playing"` ✅ (and reset score/lives/positions) · C) `"game_over"` · D) Stop the program
+   - A) `"reset"` · B) `"playing"` (and reset score/lives/positions) · C) `"game_over"` · D) Stop the program
 
 3. The capstone showcase is on:
-   - A) Aug 1 · B) Jul 30 ✅ · C) Aug 3 · D) Jul 28
+   - A) Aug 1 · B) Jul 30 · C) Aug 3 · D) Jul 28
 
 4. Comments in Python start with:
-   - A) `//` · B) `#` ✅ · C) `--` · D) `/*`
+   - A) `//` · B) `#` · C) `--` · D) `/*`
 
 5. The certificate is delivered:
-   - A) Through the mail · B) On Aug 3 via a course-site URL + email ✅ · C) Never · D) On Day 1
+   - A) Through the mail · B) On Aug 3 via a course-site URL + email · C) Never · D) On Day 1
 
 **Medium (3)**
 
 6. To draw the title screen and skip the gameplay code, you wrap gameplay in:
-   - A) `if state == "playing":` ✅ · B) `if score > 0:` · C) `if running:` · D) `while True:`
+   - A) `if state == "playing":` · B) `if score > 0:` · C) `if running:` · D) `while True:`
 
 7. To play a sound only ONCE per coin pickup, where do you call `.play()`?
-   - A) Inside the title screen branch · B) Inside the collision-detect block, right after score += 1 ✅ · C) Every frame · D) In the import section
+   - A) Inside the title screen branch · B) Inside the collision-detect block, right after score += 1 · C) Every frame · D) In the import section
 
 8. To time the game (e.g., 30 seconds to win), you use:
-   - A) `pygame.time.get_ticks()` to read milliseconds since `pygame.init()` ✅
-   - B) `time.now()` · C) `pygame.timer()` · D) `pygame.frame.count`
+   - A) `pygame.time.get_ticks()` to read milliseconds since `pygame.init()`   - B) `time.now()` · C) `pygame.timer()` · D) `pygame.frame.count`
 
 **Hard (2)**
 
 9. *(Week 5 review)* `pygame.Rect(100, 50, 30, 40)` — what does each number mean?
-   - A) (x, y, width, height) ✅ · B) (color components) · C) (window size, x, y) · D) (start, end, step, count)
+   - A) (x, y, width, height) · B) (color components) · C) (window size, x, y) · D) (start, end, step, count)
 
 10. *(Week 5 review)* What's wrong with this snippet?
     ```python
     text = font.render("Hi", True, (255, 255, 255))
     screen.blit(text)   # missing position!
     ```
-    - A) Color is wrong · B) `screen.blit` needs a position argument like `(10, 10)` ✅ · C) `True` should be False · D) Nothing wrong
+    - A) Color is wrong · B) `screen.blit` needs a position argument like `(10, 10)` · C) `True` should be False · D) Nothing wrong
 
 ### Answer Key
 1.B  2.B  3.B  4.B  5.B  6.A  7.B  8.A  9.A  10.B

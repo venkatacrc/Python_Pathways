@@ -111,41 +111,40 @@ Each shares their question and answer in the Forum with the `#share` tag.
 **Easy (5)**
 
 1. To open the first 5 rows of a DataFrame, you call:
-   - A) `df.first(5)` · B) `df.head()` ✅ · C) `df.start()` · D) `df.preview()`
+   - A) `df.first(5)` · B) `df.head()` · C) `df.start()` · D) `df.preview()`
 
 2. Which library is standard for tabular data in Python?
-   - A) `numpy` · B) `pandas` ✅ · C) `csvio` · D) `matplotlib`
+   - A) `numpy` · B) `pandas` · C) `csvio` · D) `matplotlib`
 
 3. In `df["age"]`, the `["age"]` is:
-   - A) A function call · B) Column selection by name ✅ · C) An import · D) A loop
+   - A) A function call · B) Column selection by name · C) An import · D) A loop
 
 4. To run a cell in Colab:
-   - A) `Ctrl+S` · B) `Shift+Enter` ✅ · C) Right-click → Run · D) Click anywhere
+   - A) `Ctrl+S` · B) `Shift+Enter` · C) Right-click → Run · D) Click anywhere
 
 5. Which is a **boolean** value in Python?
-   - A) `"True"` · B) `True` ✅ · C) `1` · D) `0.0`
+   - A) `"True"` · B) `True` · C) `1` · D) `0.0`
 
 **Medium (3)**
 
 6. What does `df.describe()` return?
-   - A) Just the means · B) Summary stats (count, mean, std, min, quartiles, max) for numeric columns ✅ · C) The schema · D) The first 100 rows
+   - A) Just the means · B) Summary stats (count, mean, std, min, quartiles, max) for numeric columns · C) The schema · D) The first 100 rows
 
 7. To filter for patients aged 50–60 (inclusive):
    - A) `df[df.age >= 50 and df.age <= 60]` (wrong — `and` doesn't work elementwise in pandas)
-   - B) `df[(df["age"] >= 50) & (df["age"] <= 60)]` ✅
-   - C) `df[df.age in range(50, 60)]`
+   - B) `df[(df["age"] >= 50) & (df["age"] <= 60)]`   - C) `df[df.age in range(50, 60)]`
    - D) `df.filter(age=50..60)`
 
 8. `df.isna().sum()` tells you:
-   - A) The total of all numeric columns · B) The number of missing values per column ✅ · C) The dtype of each column · D) The mean of each column
+   - A) The total of all numeric columns · B) The number of missing values per column · C) The dtype of each column · D) The mean of each column
 
 **Hard (2)**
 
 9. The Cleveland heart-disease dataset uses `?` for missing values. The right `read_csv` argument is:
-   - A) `header="?"` · B) `na_values="?"` ✅ · C) `missing="?"` · D) `replace="?"`
+   - A) `header="?"` · B) `na_values="?"` · C) `missing="?"` · D) `replace="?"`
 
 10. After `df = df.dropna()`, the original DataFrame:
-    - A) Is also modified in place · B) Is unchanged because `dropna()` returns a new DataFrame ✅ · C) Is deleted · D) Is None
+    - A) Is also modified in place · B) Is unchanged because `dropna()` returns a new DataFrame · C) Is deleted · D) Is None
 
 ### Answer Key
 1.B  2.B  3.B  4.B  5.B  6.B  7.B  8.B  9.B  10.B

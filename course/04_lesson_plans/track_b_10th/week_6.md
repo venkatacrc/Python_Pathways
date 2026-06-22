@@ -124,38 +124,38 @@ Each student integrates the validation + BioPython modifier into their notebook.
 **Easy (5)**
 
 1. A function that returns multiple values uses:
-   - A) `return a, b` ✅ (a tuple) · B) `return [a]; return [b]` · C) `return a or b` · D) Two `return` statements run at once
+   - A) `return a, b` (a tuple) · B) `return [a]; return [b]` · C) `return a or b` · D) Two `return` statements run at once
 
 2. Colab `# @param` lines create:
-   - A) Documentation only · B) Interactive form widgets ✅ · C) Errors · D) Code cells
+   - A) Documentation only · B) Interactive form widgets · C) Errors · D) Code cells
 
 3. To convert a smoker boolean to 0/1:
-   - A) `int(smoker)` ✅ · B) `smoker.toInt()` · C) `(smoker)` · D) `bool(smoker)`
+   - A) `int(smoker)` · B) `smoker.toInt()` · C) `(smoker)` · D) `bool(smoker)`
 
 4. `pd.crosstab(a, b)` produces:
-   - A) A correlation · B) A contingency table of `a` vs `b` ✅ · C) A scatter · D) A heatmap
+   - A) A correlation · B) A contingency table of `a` vs `b` · C) A scatter · D) A heatmap
 
 5. A "limitations" section in a tool document is:
-   - A) Optional fluff · B) An honest description of what your tool can't do, mandatory for clinical work ✅ · C) Code · D) The bibliography
+   - A) Optional fluff · B) An honest description of what your tool can't do, mandatory for clinical work · C) Code · D) The bibliography
 
 **Medium (3)**
 
 6. Which line is a defensive default for a missing field?
-   - A) `smoker = smoker or False` ✅ · B) `smoker == False` · C) `smoker := False` · D) `default smoker`
+   - A) `smoker = smoker or False` · B) `smoker == False` · C) `smoker := False` · D) `default smoker`
 
 7. A confusion-matrix-style 2x2 table shows:
-   - A) Predicted vs actual class counts ✅ · B) Just true positives · C) The mean of predictions · D) Random samples
+   - A) Predicted vs actual class counts · B) Just true positives · C) The mean of predictions · D) Random samples
 
 8. Risk weights "inspired by Framingham" must:
-   - A) Be perfect for clinical use · B) Be cited and labeled as educational, not clinical ✅ · C) Be hidden · D) Use machine learning
+   - A) Be perfect for clinical use · B) Be cited and labeled as educational, not clinical · C) Be hidden · D) Use machine learning
 
 **Hard (2)**
 
 9. *(Week 4 review)* If a t-test returns `p = 0.0001`, the correct interpretation is:
-   - A) The means are exactly equal · B) Strong statistical evidence the means differ ✅ · C) Sample is too small · D) Always reject
+   - A) The means are exactly equal · B) Strong statistical evidence the means differ · C) Sample is too small · D) Always reject
 
 10. *(Week 4 review)* `df.corr()` defaults to which correlation?
-    - A) Spearman · B) Pearson ✅ · C) Kendall · D) Pointbiserial
+    - A) Spearman · B) Pearson · C) Kendall · D) Pointbiserial
 
 ### Answer Key
 1.A  2.B  3.A  4.B  5.B  6.A  7.A  8.B  9.B  10.B

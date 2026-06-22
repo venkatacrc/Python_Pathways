@@ -102,38 +102,38 @@ Each pro picks a 16-character string from the corpus, runs the model, and visual
 **Easy (5)**
 
 1. The shape of `Q @ K^T` for a single head is:
-   - A) `(D, D)` · B) `(T, T)` ✅ · C) `(T, D)` · D) `(V, V)`
+   - A) `(D, D)` · B) `(T, T)` · C) `(T, D)` · D) `(V, V)`
 
 2. Causal masking sets attention scores at `j > i` to:
-   - A) 0 · B) `-inf` (so softmax → 0) ✅ · C) 1 · D) Mean
+   - A) 0 · B) `-inf` (so softmax → 0) · C) 1 · D) Mean
 
 3. Position embeddings exist because:
-   - A) They're decorative · B) Self-attention is permutation-invariant without positional information ✅ · C) For RAM · D) Required by Python
+   - A) They're decorative · B) Self-attention is permutation-invariant without positional information · C) For RAM · D) Required by Python
 
 4. `softmax` along axis -1 normalizes:
-   - A) Across batch · B) Each row of attention scores to sum to 1 ✅ · C) The values · D) Both axes
+   - A) Across batch · B) Each row of attention scores to sum to 1 · C) The values · D) Both axes
 
 5. Scaling by `sqrt(D_h)` keeps:
-   - A) Numerical precision · B) The variance of dot products bounded so softmax doesn't saturate ✅ · C) Memory low · D) None
+   - A) Numerical precision · B) The variance of dot products bounded so softmax doesn't saturate · C) Memory low · D) None
 
 **Medium (3)**
 
 6. The attention output shape (single head, no batch) is:
-   - A) `(T, D)` (after Wo back to embed dim) · B) `(T, D_h)` (right after attention, before any output proj) ✅ · C) `(V, T)` · D) `(D, V)`
+   - A) `(T, D)` (after Wo back to embed dim) · B) `(T, D_h)` (right after attention, before any output proj) · C) `(V, T)` · D) `(D, V)`
 
 7. Token embeddings are learnable:
-   - A) Matrices indexed by token id ✅ · B) Random and frozen · C) One-hot · D) Computed from tf-idf
+   - A) Matrices indexed by token id · B) Random and frozen · C) One-hot · D) Computed from tf-idf
 
 8. Self-attention is *self*-attention because:
-   - A) Q, K, V come from the same input sequence ✅ · B) It calls itself recursively · C) It re-attends to outputs · D) It's reflexive
+   - A) Q, K, V come from the same input sequence · B) It calls itself recursively · C) It re-attends to outputs · D) It's reflexive
 
 **Hard (2)**
 
 9. *(Week 2 review)* The gradient `dL/dlogits` for cross-entropy is:
-   - A) `softmax(logits) - onehot(y)` ✅ · B) `logits` · C) `onehot(y)` · D) `1`
+   - A) `softmax(logits) - onehot(y)` · B) `logits` · C) `onehot(y)` · D) `1`
 
 10. *(Week 2 review)* Why subtract `logits.max()` before `exp` in softmax?
-    - A) Make the max =0 · B) Numerical stability — avoid `exp(big number)` overflow ✅ · C) Required by transformer · D) Speed
+    - A) Make the max =0 · B) Numerical stability — avoid `exp(big number)` overflow · C) Required by transformer · D) Speed
 
 ### Answer Key
 1.B  2.B  3.B  4.B  5.B  6.B  7.A  8.A  9.A  10.B

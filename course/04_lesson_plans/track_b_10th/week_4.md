@@ -95,40 +95,39 @@ Each student runs t-tests comparing diabetic vs non-diabetic across `glucose, bm
 **Easy (5)**
 
 1. The `mean` of `[2, 4, 6, 8]` is:
-   - A) 4 · B) 5 ✅ · C) 6 · D) 8
+   - A) 4 · B) 5 · C) 6 · D) 8
 
 2. `df["x"].std()` returns:
-   - A) Sum · B) Standard deviation ✅ · C) Median · D) Mode
+   - A) Sum · B) Standard deviation · C) Median · D) Mode
 
 3. Correlation values lie between:
-   - A) 0 and 1 · B) -1 and 1 ✅ · C) -∞ and ∞ · D) 0 and 100
+   - A) 0 and 1 · B) -1 and 1 · C) -∞ and ∞ · D) 0 and 100
 
 4. To import scipy's stats module:
-   - A) `import scipy` · B) `from scipy import stats` ✅ · C) `import stats` · D) `from scipy.stats import all`
+   - A) `import scipy` · B) `from scipy import stats` · C) `import stats` · D) `from scipy.stats import all`
 
 5. A p-value of 0.001 generally indicates:
-   - A) No difference · B) Strong evidence the means differ ✅ · C) Always wrong · D) Sample too large
+   - A) No difference · B) Strong evidence the means differ · C) Always wrong · D) Sample too large
 
 **Medium (3)**
 
 6. `pima[["glucose","bmi"]].corr()` returns:
-   - A) A 2x2 correlation matrix ✅ · B) A scatter plot · C) A list of values · D) A boolean
+   - A) A 2x2 correlation matrix · B) A scatter plot · C) A list of values · D) A boolean
 
 7. `df["x"].quantile(0.75)` is:
-   - A) The 25th percentile · B) The 75th percentile (Q3) ✅ · C) The mean · D) The mode
+   - A) The 25th percentile · B) The 75th percentile (Q3) · C) The mean · D) The mode
 
 8. An independent t-test compares:
-   - A) Two paired observations · B) Two means from independent groups ✅ · C) Variance · D) Counts
+   - A) Two paired observations · B) Two means from independent groups · C) Variance · D) Counts
 
 **Hard (2)**
 
 9. *(Week 2 review)* `pima.groupby("outcome")[["glucose","bmi"]].mean()` returns:
-   - A) One row per `outcome` value, columns glucose/bmi means ✅ · B) The whole DataFrame · C) Counts only · D) An error
+   - A) One row per `outcome` value, columns glucose/bmi means · B) The whole DataFrame · C) Counts only · D) An error
 
 10. *(Week 2 review)* To filter PIMA for "obese diabetics":
     - A) `pima[pima.bmi > 30 and pima.outcome == 1]` (wrong because of `and`)
-    - B) `pima[(pima["bmi"] > 30) & (pima["outcome"] == 1)]` ✅
-    - C) `pima.filter(bmi=30, outcome=1)`
+    - B) `pima[(pima["bmi"] > 30) & (pima["outcome"] == 1)]`    - C) `pima.filter(bmi=30, outcome=1)`
     - D) `pima[pima.obese & pima.diabetic]`
 
 ### Answer Key

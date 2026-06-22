@@ -156,19 +156,19 @@ That's it. You're caught up.
 **Easy (5)**
 
 1. To define a function in Python, you write:
-   - A) `function greet():` · B) `def greet():` ✅ · C) `func greet():` · D) `make greet():`
+   - A) `function greet():` · B) `def greet():` · C) `func greet():` · D) `make greet():`
 
 2. What does `pygame.display.set_mode((400, 300))` do?
-   - A) Sets the volume · B) Creates a 400×300 game window ✅ · C) Saves a file · D) Imports pygame
+   - A) Sets the volume · B) Creates a 400×300 game window · C) Saves a file · D) Imports pygame
 
 3. Which is an RGB color for pure red?
-   - A) `(0, 255, 0)` · B) `(255, 255, 255)` · C) `(255, 0, 0)` ✅ · D) `(0, 0, 255)`
+   - A) `(0, 255, 0)` · B) `(255, 255, 255)` · C) `(255, 0, 0)` · D) `(0, 0, 255)`
 
 4. To make the game close when you click the X, you check for:
-   - A) `pygame.CLOSE` · B) `pygame.QUIT` ✅ · C) `pygame.EXIT` · D) `pygame.STOP`
+   - A) `pygame.CLOSE` · B) `pygame.QUIT` · C) `pygame.EXIT` · D) `pygame.STOP`
 
 5. What does `return` do in a function?
-   - A) Prints something · B) Sends a value back to whoever called the function ✅ · C) Stops the program · D) Loops
+   - A) Prints something · B) Sends a value back to whoever called the function · C) Stops the program · D) Loops
 
 **Medium (3)**
 
@@ -178,14 +178,13 @@ That's it. You're caught up.
        return x * 2
    ```
    When you call `double(5)`?
-   - A) 5 · B) 7 · C) 10 ✅ · D) 25
+   - A) 5 · B) 7 · C) 10 · D) 25
 
 7. To make a circle bounce off the right edge of a 640-wide window, what condition flips its speed?
-   - A) `if x > 0` · B) `if x > 640 - radius` ✅ (the circle's right edge crosses the wall) · C) `if x < 0` · D) `if speed > 0`
+   - A) `if x > 0` · B) `if x > 640 - radius` (the circle's right edge crosses the wall) · C) `if x < 0` · D) `if speed > 0`
 
 8. Which line draws a yellow filled rectangle at x=50, y=80, width=100, height=40?
-   - A) `pygame.draw.rect(screen, (255, 255, 0), (50, 80, 100, 40))` ✅
-   - B) `pygame.draw.rect(screen, "yellow", 50, 80, 100, 40)`
+   - A) `pygame.draw.rect(screen, (255, 255, 0), (50, 80, 100, 40))`   - B) `pygame.draw.rect(screen, "yellow", 50, 80, 100, 40)`
    - C) `pygame.rect(screen, yellow, (50, 80, 100, 40))`
    - D) `pygame.draw.rectangle((50, 80), 100, 40)`
 
@@ -197,13 +196,11 @@ That's it. You're caught up.
    print(f"Hi {name}, you have {3 + 4} treats.")
    ```
    - A) `Hi Mochi, you have 3 + 4 treats.`
-   - B) `Hi Mochi, you have 7 treats.` ✅
-   - C) `Hi {name}, you have 7 treats.`
+   - B) `Hi Mochi, you have 7 treats.`   - C) `Hi {name}, you have 7 treats.`
    - D) Error
 
 10. *(Week 1 review)* After `import turtle` and `t = turtle.Turtle()`, which line draws a square?
-    - A) `for i in range(4): t.forward(100); t.right(90)` ✅
-    - B) `for i in range(3): t.forward(100); t.right(120)`
+    - A) `for i in range(4): t.forward(100); t.right(90)`    - B) `for i in range(3): t.forward(100); t.right(120)`
     - C) `t.square(100)`
     - D) `t.forward(400)`
 

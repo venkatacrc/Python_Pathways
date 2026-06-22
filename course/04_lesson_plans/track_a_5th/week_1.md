@@ -115,32 +115,27 @@ Students draw a 5-pointed star by repeating `t.forward(120); t.right(144)` five 
 
 1. Which line will print exactly: `Hello, Sparky!`?
    - A) `print(Hello, Sparky!)`
-   - B) `print("Hello, Sparky!")` ✅
-   - C) `Print("Hello, Sparky!")`
+   - B) `print("Hello, Sparky!")`   - C) `Print("Hello, Sparky!")`
    - D) `print "Hello, Sparky!"`
 
 2. What does `input()` do?
    - A) Prints something on the screen
-   - B) Asks the user a question and waits for them to type an answer ✅
-   - C) Closes the program
+   - B) Asks the user a question and waits for them to type an answer   - C) Closes the program
    - D) Imports a library
 
 3. After `pet = "cat"`, what does `print(pet)` show?
    - A) `pet`
    - B) `"cat"`
-   - C) `cat` ✅
-   - D) Nothing
+   - C) `cat`   - D) Nothing
 
 4. Which symbol means "multiply" in Python?
    - A) `x`
-   - B) `*` ✅
-   - C) `×`
+   - B) `*`   - C) `×`
    - D) `m`
 
 5. What does `print("ha" * 3)` print?
    - A) `ha 3`
-   - B) `hahaha` ✅
-   - C) `ha * 3`
+   - B) `hahaha`   - C) `ha * 3`
    - D) Error
 
 **Medium (3 questions, 1 pt each)**
@@ -153,27 +148,23 @@ Students draw a 5-pointed star by repeating `t.forward(120); t.right(144)` five 
    ```
    - A) `age`
    - B) `10`
-   - C) `11` ✅
-   - D) `age + 1`
+   - C) `11`   - D) `age + 1`
 
 7. What does `print(7 // 2)` print?
    - A) `3.5`
-   - B) `3` ✅
-   - C) `4`
+   - B) `3`   - C) `4`
    - D) Error
 
 8. Which line uses an *f-string* correctly?
    - A) `print("Hi, name")`
    - B) `print("Hi, " + name)` (works but not an f-string)
-   - C) `print(f"Hi, {name}")` ✅
-   - D) `print(f"Hi, name")`
+   - C) `print(f"Hi, {name}")`   - D) `print(f"Hi, name")`
 
 **Hard (2 questions, 1 pt each)**
 
 9. The turtle is at position (0, 0) facing right. It runs `t.forward(50); t.left(90); t.forward(50)`. Where is it now?
    - A) (50, 0)
-   - B) (50, 50) ✅
-   - C) (100, 0)
+   - B) (50, 50)   - C) (100, 0)
    - D) (0, 50)
 
 10. What does this code print?
@@ -182,8 +173,7 @@ Students draw a 5-pointed star by repeating `t.forward(120); t.right(144)` five 
     print("Hi", name + name)
     ```
     - A) `Hi Sparky`
-    - B) `Hi SparkySparky` ✅
-    - C) `Hi Sparky Sparky`
+    - B) `Hi SparkySparky`    - C) `Hi Sparky Sparky`
     - D) Error
 
 ### Answer Key

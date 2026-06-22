@@ -75,39 +75,37 @@ Group conversation: *"How could a tool like this actually help a doctor or nurse
 **Easy (5)**
 
 1. The capstone showcase is on:
-   - A) Aug 1 · B) Jul 30 ✅ · C) Aug 3 · D) Aug 4
+   - A) Aug 1 · B) Jul 30 · C) Aug 3 · D) Aug 4
 
 2. A clinical decision-support tool needs:
-   - A) Pretty colors only · B) Validation, transparency about limitations, regulatory awareness ✅ · C) Marketing · D) None of these
+   - A) Pretty colors only · B) Validation, transparency about limitations, regulatory awareness · C) Marketing · D) None of these
 
 3. To re-render an updated chart in Colab, you need to:
-   - A) Restart Colab · B) Re-run the cell that calls `plt.show()` ✅ · C) Refresh browser · D) Print again
+   - A) Restart Colab · B) Re-run the cell that calls `plt.show()` · C) Refresh browser · D) Print again
 
 4. The Framingham study is:
-   - A) A pizza chain · B) A foundational longitudinal cardiovascular study ✅ · C) A coding competition · D) A novel
+   - A) A pizza chain · B) A foundational longitudinal cardiovascular study · C) A coding competition · D) A novel
 
 5. To export a Colab notebook for sharing:
-   - A) Print → PDF · B) `File → Download → .ipynb` ✅ · C) Email screenshot · D) Tweet
+   - A) Print → PDF · B) `File → Download → .ipynb` · C) Email screenshot · D) Tweet
 
 **Medium (3)**
 
 6. To document why you used certain weights:
-   - A) Hide them in code · B) Add a markdown cell citing the source ✅ · C) Comment in Spanish · D) Skip it
+   - A) Hide them in code · B) Add a markdown cell citing the source · C) Comment in Spanish · D) Skip it
 
 7. Which is **NOT** a typical limitation of a tool like yours?
-   - A) Small / non-representative training data · B) Data leakage · C) Demographic bias · D) `df.head()` default of 5 ✅
-
+   - A) Small / non-representative training data · B) Data leakage · C) Demographic bias · D) `df.head()` default of 5
 8. Demoing in a showcase, the most persuasive narrative is:
-   - A) "It's perfect" · B) "Here's what it does, here's why these choices, here's what would break it" ✅ · C) "I'm not sure how it works" · D) "Trust me"
+   - A) "It's perfect" · B) "Here's what it does, here's why these choices, here's what would break it" · C) "I'm not sure how it works" · D) "Trust me"
 
 **Hard (2)**
 
 9. *(Week 5 review)* `Seq("ATG").translate()` returns:
-   - A) `Seq("M")` (the methionine amino acid; ATG is the start codon) ✅
-   - B) `Seq("ATG")` · C) An error · D) Empty
+   - A) `Seq("M")` (the methionine amino acid; ATG is the start codon)   - B) `Seq("ATG")` · C) An error · D) Empty
 
 10. *(Week 5 review)* GC content of `"ACGTACGT"` is:
-    - A) 25% · B) 50% ✅ · C) 75% · D) 100%
+    - A) 25% · B) 50% · C) 75% · D) 100%
 
 ### Answer Key
 1.B  2.B  3.B  4.B  5.B  6.B  7.D  8.B  9.A  10.B

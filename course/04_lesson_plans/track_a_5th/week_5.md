@@ -116,33 +116,32 @@ Assignment W5 — your first complete win/lose game.
 **Easy (5)**
 
 1. Which method tests if two `pygame.Rect` objects overlap?
-   - A) `.collide()` · B) `.colliderect()` ✅ · C) `.overlap()` · D) `.touch()`
+   - A) `.collide()` · B) `.colliderect()` · C) `.overlap()` · D) `.touch()`
 
 2. To make text on screen, you first need a:
-   - A) `pygame.Font` object via `pygame.font.SysFont(None, 36)` ✅
-   - B) `pygame.write()` call · C) text variable only · D) print() statement
+   - A) `pygame.Font` object via `pygame.font.SysFont(None, 36)`   - B) `pygame.write()` call · C) text variable only · D) print() statement
 
 3. `pygame.font.SysFont(None, 36)` returns:
-   - A) the screen · B) a font object you call `.render()` on ✅ · C) a number · D) a string
+   - A) the screen · B) a font object you call `.render()` on · C) a number · D) a string
 
 4. To put a rendered text on the screen, you call:
-   - A) `screen.put(text)` · B) `screen.blit(text, (x, y))` ✅ · C) `pygame.text(...)` · D) `text.draw()`
+   - A) `screen.put(text)` · B) `screen.blit(text, (x, y))` · C) `pygame.text(...)` · D) `text.draw()`
 
 5. `random.randint(1, 10)` returns:
-   - A) Always 1 · B) A random int from 1 to 10 inclusive ✅ · C) A float · D) Always 10
+   - A) Always 1 · B) A random int from 1 to 10 inclusive · C) A float · D) Always 10
 
 **Medium (3)**
 
 6. Score is initialized as `score = 0`. Where is the right place?
    - A) Inside the main `while` loop (resets every frame) — wrong
-   - B) Before the main `while` loop ✅ — preserves across frames
+   - B) Before the main `while` loop — preserves across frames
    - C) Inside `pygame.event.get()` · D) After `pygame.quit()`
 
 7. Why might your collision *seem* not to work?
-   - A) Forgot to import pygame · B) Created the rect once outside the loop and never updated its position with the player ✅ · C) Wrong color · D) Window too small
+   - A) Forgot to import pygame · B) Created the rect once outside the loop and never updated its position with the player · C) Wrong color · D) Window too small
 
 8. To make an enemy bounce off walls horizontally, you flip its velocity when:
-   - A) `enemy.x < 0 or enemy.x > screen_width` ✅ · B) `time > 5` · C) `score > 10` · D) Never
+   - A) `enemy.x < 0 or enemy.x > screen_width` · B) `time > 5` · C) `score > 10` · D) Never
 
 **Hard (2)**
 
@@ -152,7 +151,7 @@ Assignment W5 — your first complete win/lose game.
        return abs(a - b) < 5
    ```
    When called with `is_close(10, 12)`?
-   - A) True ✅ · B) False · C) 2 · D) Error
+   - A) True · B) False · C) 2 · D) Error
 
 10. *(Week 3 review)* What's wrong with this Pygame setup?
     ```python
@@ -160,7 +159,7 @@ Assignment W5 — your first complete win/lose game.
     screen = pygame.display.set_mode((640, 480))
     pygame.display.set_caption("Hi")
     ```
-    - A) Forgot `pygame.init()` ✅ · B) Wrong resolution · C) Caption can't be "Hi" · D) Nothing wrong
+    - A) Forgot `pygame.init()` · B) Wrong resolution · C) Caption can't be "Hi" · D) Nothing wrong
 
 ### Answer Key
 1.B  2.A  3.B  4.B  5.B  6.B  7.B  8.A  9.A  10.A

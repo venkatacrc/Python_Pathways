@@ -123,39 +123,38 @@ Discuss: *does our flag actually correlate with diabetes outcome?* This previews
 **Easy (5)**
 
 1. `df.groupby("outcome")["bmi"].mean()` returns:
-   - A) Each row's mean · B) Mean BMI for each value of `outcome` ✅ · C) Total BMI · D) Error
+   - A) Each row's mean · B) Mean BMI for each value of `outcome` · C) Total BMI · D) Error
 
 2. `df["age"].apply(lambda x: x * 12)` does what?
-   - A) Multiplies the column by 12 elementwise ✅ · B) Adds 12 · C) Filters · D) Errors
+   - A) Multiplies the column by 12 elementwise · B) Adds 12 · C) Filters · D) Errors
 
 3. To replace zeros with NaN:
-   - A) `df["bp"].drop(0)` · B) `df["bp"].replace(0, pd.NA)` ✅ · C) `df["bp"] = None if 0` · D) `df.fillna(0)`
+   - A) `df["bp"].drop(0)` · B) `df["bp"].replace(0, pd.NA)` · C) `df["bp"] = None if 0` · D) `df.fillna(0)`
 
 4. Median is preferred over mean for imputation when:
-   - A) The data are perfectly normal · B) There are outliers ✅ · C) Always · D) Never
+   - A) The data are perfectly normal · B) There are outliers · C) Always · D) Never
 
 5. To add a derived column:
-   - A) `df["new"] = df["a"] + df["b"]` ✅ · B) `df.add("new", df.a + df.b)` · C) `df.append(...)` · D) `df.col("new")`
+   - A) `df["new"] = df["a"] + df["b"]` · B) `df.add("new", df.a + df.b)` · C) `df.append(...)` · D) `df.col("new")`
 
 **Medium (3)**
 
 6. `pima[(pima["age"] > 50) & (pima["bmi"] > 30)]` — the `&` instead of `and` is required because:
-   - A) Pandas syntax · B) `and` doesn't work elementwise on Series ✅ · C) `&` is faster · D) `and` errors silently
+   - A) Pandas syntax · B) `and` doesn't work elementwise on Series · C) `&` is faster · D) `and` errors silently
 
 7. `df.apply(fn, axis=1)` applies `fn` to:
-   - A) Each column · B) Each row ✅ · C) Each cell · D) Random samples
+   - A) Each column · B) Each row · C) Each cell · D) Random samples
 
 8. Why might a 0 in PIMA's `bp` column be wrong?
-   - A) Resting blood pressure of 0 is impossible (the patient would be dead) ✅
-   - B) `bp` shouldn't be in the dataset · C) Encoding artifact only · D) Both A and: yes, but A is the medical reason — go with A
+   - A) Resting blood pressure of 0 is impossible (the patient would be dead)   - B) `bp` shouldn't be in the dataset · C) Encoding artifact only · D) Both A and: yes, but A is the medical reason — go with A
 
 **Hard (2)**
 
 9. *(Week 1 review)* What does `df["age"].mean()` return?
-   - A) The DataFrame · B) A single number — the average age ✅ · C) A list · D) A new column
+   - A) The DataFrame · B) A single number — the average age · C) A list · D) A new column
 
 10. *(Week 1 review)* `df["target"].value_counts()` returns:
-    - A) The number of unique values for each entry of `target` ✅ · B) The mean of `target` · C) Each row's count · D) Errors
+    - A) The number of unique values for each entry of `target` · B) The mean of `target` · C) Each row's count · D) Errors
 
 ### Answer Key
 1.B  2.A  3.B  4.B  5.A  6.B  7.B  8.A  9.B  10.A

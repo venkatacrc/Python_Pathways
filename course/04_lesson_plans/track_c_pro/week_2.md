@@ -148,42 +148,42 @@ Each pro:
 **Easy (5)**
 
 1. The gradient of cross-entropy w.r.t. logits is:
-   - A) softmax(logits) ✅ minus onehot(y)
+   - A) softmax(logits) minus onehot(y)
      · B) onehot(y) - softmax(logits)
      · C) sigmoid(logits) - y
      · D) the logits themselves
    *(canonical answer: A — `softmax(logits) - onehot(y)`)*
 
 2. `np.outer(a, b)` produces:
-   - A) Element-wise product · B) Outer product, shape (len a, len b) ✅ · C) Inner product · D) Cross product
+   - A) Element-wise product · B) Outer product, shape (len a, len b) · C) Inner product · D) Cross product
 
 3. `tanh` derivative is:
-   - A) `1 - tanh(x)` · B) `1 - tanh(x)**2` ✅ · C) `tanh(x)*(1-tanh(x))` · D) `0`
+   - A) `1 - tanh(x)` · B) `1 - tanh(x)**2` · C) `tanh(x)*(1-tanh(x))` · D) `0`
 
 4. SGD with learning rate `lr` updates parameters as:
-   - A) `p += lr * grad` · B) `p -= lr * grad` ✅ · C) `p *= grad` · D) `p = grad`
+   - A) `p += lr * grad` · B) `p -= lr * grad` · C) `p *= grad` · D) `p = grad`
 
 5. Subtracting the max from logits before `exp` is to:
-   - A) Speed up training · B) Improve numerical stability ✅ · C) Make output sum to 1 · D) None
+   - A) Speed up training · B) Improve numerical stability · C) Make output sum to 1 · D) None
 
 **Medium (3)**
 
 6. The shape of `dW2` (gradient of W2) is:
-   - A) (V, H) · B) (H, V) ✅ · C) Scalar · D) (V,)
+   - A) (V, H) · B) (H, V) · C) Scalar · D) (V,)
 
 7. Why is pure-Python training 100× slower than numpy?
-   - A) numpy is GPU only · B) numpy uses contiguous arrays + BLAS for matmul ✅ · C) Python is single-threaded · D) Disk I/O
+   - A) numpy is GPU only · B) numpy uses contiguous arrays + BLAS for matmul · C) Python is single-threaded · D) Disk I/O
 
 8. The sum of all softmax probabilities equals:
-   - A) 0 · B) 1 ✅ · C) V · D) The temperature
+   - A) 0 · B) 1 · C) V · D) The temperature
 
 **Hard (2)**
 
 9. Numerical check of gradient correctness uses:
-   - A) Random weights · B) Finite differences `(L(p+ε) - L(p-ε))/(2ε)` ≈ analytical grad ✅ · C) `assert grad > 0` · D) Plotting
+   - A) Random weights · B) Finite differences `(L(p+ε) - L(p-ε))/(2ε)` ≈ analytical grad · C) `assert grad > 0` · D) Plotting
 
 10. Why is the dataset re-tokenized as character indices (not raw bytes)?
-    - A) Because Python forbids bytes · B) To match the V-dimensional one-hot model and remove byte-encoding artifacts ✅ · C) For speed · D) For Unicode
+    - A) Because Python forbids bytes · B) To match the V-dimensional one-hot model and remove byte-encoding artifacts · C) For speed · D) For Unicode
 
 ### Answer Key
 1.A  2.B  3.B  4.B  5.B  6.B  7.B  8.B  9.B  10.B

@@ -127,23 +127,23 @@ Assignment W2 (below) — due Mon Jun 29, 11:59 PM.
 **Easy (5)**
 
 1. Which keyword starts a "decision" in Python?
-   - A) `decide` · B) `if` ✅ · C) `choose` · D) `case`
+   - A) `decide` · B) `if` · C) `choose` · D) `case`
 
 2. How many times does this run?
    ```python
    for i in range(4):
        print("hi")
    ```
-   - A) 0 · B) 3 · C) 4 ✅ · D) 5
+   - A) 0 · B) 3 · C) 4 · D) 5
 
 3. `if pet == "cat":` — what does `==` mean?
-   - A) Assign a value · B) Compare values for equality ✅ · C) Add · D) Print
+   - A) Assign a value · B) Compare values for equality · C) Add · D) Print
 
 4. Which line picks a random item from a list?
-   - A) `random.pick(...)` · B) `random.choice(...)` ✅ · C) `random.item(...)` · D) `pick.random(...)`
+   - A) `random.pick(...)` · B) `random.choice(...)` · C) `random.item(...)` · D) `pick.random(...)`
 
 5. What does `range(3)` give us?
-   - A) `1, 2, 3` · B) `0, 1, 2` ✅ · C) `0, 1, 2, 3` · D) `3, 2, 1`
+   - A) `1, 2, 3` · B) `0, 1, 2` · C) `0, 1, 2, 3` · D) `3, 2, 1`
 
 **Medium (3)**
 
@@ -157,7 +157,7 @@ Assignment W2 (below) — due Mon Jun 29, 11:59 PM.
    else:
        print("small")
    ```
-   - A) `big` · B) `medium` ✅ · C) `small` · D) Nothing
+   - A) `big` · B) `medium` · C) `small` · D) Nothing
 
 7. The `while` loop below stops when:
    ```python
@@ -165,21 +165,20 @@ Assignment W2 (below) — due Mon Jun 29, 11:59 PM.
    while lives > 0:
        lives = lives - 1
    ```
-   - A) `lives` becomes 0 ✅ · B) `lives` becomes 1 · C) Never · D) After 1 step
+   - A) `lives` becomes 0 · B) `lives` becomes 1 · C) Never · D) After 1 step
 
 8. Which combo draws a square with a `for` loop?
-   - A) `for i in range(4): t.forward(50); t.right(90)` ✅
-   - B) `for i in range(3): t.forward(50); t.right(90)`
+   - A) `for i in range(4): t.forward(50); t.right(90)`   - B) `for i in range(3): t.forward(50); t.right(90)`
    - C) `for i in range(4): t.forward(50); t.right(60)`
    - D) `while True: t.forward(50); t.right(90)`
 
 **Hard (2)**
 
 9. *(Week 1 review)* What does `print("ha" * 3)` print?
-   - A) `ha3` · B) `hahaha` ✅ · C) `ha * 3` · D) Error
+   - A) `ha3` · B) `hahaha` · C) `ha * 3` · D) Error
 
 10. *(Week 1 review)* After `name = input("Name? ")` and the user types `Sparky`, what type is the variable `name`?
-    - A) integer · B) float · C) string ✅ · D) list
+    - A) integer · B) float · C) string · D) list
 
 ### Answer Key
 1.B  2.C  3.B  4.B  5.B  6.B  7.A  8.A  9.B  10.C

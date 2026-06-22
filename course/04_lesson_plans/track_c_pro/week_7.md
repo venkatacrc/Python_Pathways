@@ -94,38 +94,38 @@ Each pro: 9 min total —
 **Easy (5)**
 
 1. The capstone showcase is on:
-   - A) Aug 1 · B) Jul 30 ✅ · C) Aug 3 · D) Jul 28
+   - A) Aug 1 · B) Jul 30 · C) Aug 3 · D) Jul 28
 
 2. A char-level tokenizer's vocabulary on a typical English corpus is approximately:
-   - A) ~30 · B) ~65–100 ✅ (depending on punctuation) · C) ~256 · D) ~50000
+   - A) ~30 · B) ~65–100 (depending on punctuation) · C) ~256 · D) ~50000
 
 3. KV cache speeds up inference by:
-   - A) Random sampling · B) Reusing previously-computed K and V across the autoregressive decode loop ✅ · C) Compression · D) Quantization
+   - A) Random sampling · B) Reusing previously-computed K and V across the autoregressive decode loop · C) Compression · D) Quantization
 
 4. BPE produces subword tokens; pros include:
-   - A) Smaller sequence length, OOV-resistant ✅ · B) Always smaller vocab · C) No tokenization cost · D) Forbidden in transformers
+   - A) Smaller sequence length, OOV-resistant · B) Always smaller vocab · C) No tokenization cost · D) Forbidden in transformers
 
 5. Chinchilla scaling laws suggest:
-   - A) More params is always better · B) Compute should be split such that data tokens ≈ 20× parameter count for compute-optimal training ✅ · C) Data doesn't matter · D) Random
+   - A) More params is always better · B) Compute should be split such that data tokens ≈ 20× parameter count for compute-optimal training · C) Data doesn't matter · D) Random
 
 **Medium (3)**
 
 6. Mixed-precision training (`bf16`):
-   - A) Lossless · B) Trades a small precision for ~2× memory & speed; bf16 has the same exponent range as fp32 ✅ · C) Slower · D) Required for transformers
+   - A) Lossless · B) Trades a small precision for ~2× memory & speed; bf16 has the same exponent range as fp32 · C) Slower · D) Required for transformers
 
 7. RLHF stands for:
-   - A) Real-Life Human Filtering · B) Reinforcement Learning from Human Feedback ✅ · C) RL Hyperparameter Function · D) Random Latent Hidden Forward
+   - A) Real-Life Human Filtering · B) Reinforcement Learning from Human Feedback · C) RL Hyperparameter Function · D) Random Latent Hidden Forward
 
 8. The "secret" to GPT-4 is:
-   - A) New math · B) Same architecture, much more compute + data + alignment + engineering ✅ · C) Quantum · D) Forbidden knowledge
+   - A) New math · B) Same architecture, much more compute + data + alignment + engineering · C) Quantum · D) Forbidden knowledge
 
 **Hard (2)**
 
 9. *(Week 5 review)* In a transformer block, the residual connection adds the:
-   - A) Input of the block to the output of attention/MLP sub-layers ✅ · B) Logits · C) Embeddings · D) None
+   - A) Input of the block to the output of attention/MLP sub-layers · B) Logits · C) Embeddings · D) None
 
 10. *(Week 5 review)* LayerNorm differs from BatchNorm by:
-    - A) Normalizing across the batch · B) Normalizing across the feature dimension per sample (no batch statistics) ✅ · C) No difference · D) Slower
+    - A) Normalizing across the batch · B) Normalizing across the feature dimension per sample (no batch statistics) · C) No difference · D) Slower
 
 ### Answer Key
 1.B  2.B  3.B  4.A  5.B  6.B  7.B  8.B  9.A  10.B

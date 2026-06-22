@@ -121,38 +121,38 @@ Assignment W6 → final polish before Capstone Showcase. Save your game proudly.
 **Easy (5)**
 
 1. To play a sound in Pygame:
-   - A) `pygame.play("ding.wav")` · B) `pygame.mixer.Sound("ding.wav").play()` ✅ · C) `print("ding")` · D) `pygame.audio.play(...)`
+   - A) `pygame.play("ding.wav")` · B) `pygame.mixer.Sound("ding.wav").play()` · C) `print("ding")` · D) `pygame.audio.play(...)`
 
 2. A *state variable* in our game holds:
-   - A) The score · B) Which screen we're on right now ("title", "playing", "game_over") ✅ · C) The player's color · D) The window size
+   - A) The score · B) Which screen we're on right now ("title", "playing", "game_over") · C) The player's color · D) The window size
 
 3. To loop background music forever, the argument is:
-   - A) 0 · B) -1 ✅ · C) 1 · D) `loop=True`
+   - A) 0 · B) -1 · C) 1 · D) `loop=True`
 
 4. Reasons to add comments to code:
-   - A) Make it run faster · B) Help future you (or a teammate) understand it ✅ · C) Hide the code · D) None
+   - A) Make it run faster · B) Help future you (or a teammate) understand it · C) Hide the code · D) None
 
 5. To start the game from the title screen we listen for:
-   - A) Mouse only · B) `pygame.K_SPACE` keypress (or any chosen key) ✅ · C) Game time > 5 sec · D) Random chance
+   - A) Mouse only · B) `pygame.K_SPACE` keypress (or any chosen key) · C) Game time > 5 sec · D) Random chance
 
 **Medium (3)**
 
 6. To restart the game after Game Over, we have to:
-   - A) Reload Replit · B) Reset score, lives, and the player's position, then change state back to "playing" ✅ · C) Just change state · D) Just reset score
+   - A) Reload Replit · B) Reset score, lives, and the player's position, then change state back to "playing" · C) Just change state · D) Just reset score
 
 7. Adding `pygame.mixer.init()` is necessary because:
-   - A) Pygame doesn't auto-init the audio system; you must turn it on ✅ · B) It loads images · C) It opens the screen · D) It's optional
+   - A) Pygame doesn't auto-init the audio system; you must turn it on · B) It loads images · C) It opens the screen · D) It's optional
 
 8. A clean way to make enemies harder over time:
-   - A) Multiply their `vx` and `vy` by 1.1 every level-up ✅ · B) Reduce screen size · C) Disable the player · D) Print "harder"
+   - A) Multiply their `vx` and `vy` by 1.1 every level-up · B) Reduce screen size · C) Disable the player · D) Print "harder"
 
 **Hard (2)**
 
 9. *(Week 4 review)* If `coins = [Coin() for _ in range(5)]`, how do you draw them all?
-   - A) `coins.draw(screen)` · B) `for c in coins: c.draw(screen)` ✅ · C) `Coin.draw_all()` · D) `pygame.draw_list(coins)`
+   - A) `coins.draw(screen)` · B) `for c in coins: c.draw(screen)` · C) `Coin.draw_all()` · D) `pygame.draw_list(coins)`
 
 10. *(Week 4 review)* `pygame.key.get_pressed()` returns:
-    - A) The last key pressed · B) A list-like object you can index by `K_LEFT`, `K_UP`, etc. that's True if held ✅ · C) The number of keys · D) None
+    - A) The last key pressed · B) A list-like object you can index by `K_LEFT`, `K_UP`, etc. that's True if held · C) The number of keys · D) None
 
 ### Answer Key
 1.B  2.B  3.B  4.B  5.B  6.B  7.A  8.A  9.B  10.B

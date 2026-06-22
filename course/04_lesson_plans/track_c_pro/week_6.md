@@ -113,38 +113,38 @@ Each pro tries 3 (T, D, H, n_blocks) configurations + temperatures, ranks sample
 **Easy (5)**
 
 1. Adam combines:
-   - A) Just momentum · B) Momentum + RMSProp ✅ · C) SGD only · D) Adagrad only
+   - A) Just momentum · B) Momentum + RMSProp · C) SGD only · D) Adagrad only
 
 2. Bias correction in Adam matters most when:
-   - A) `t` is large · B) `t` is small (early training, when m, v are biased toward 0) ✅ · C) Never · D) Always equally
+   - A) `t` is large · B) `t` is small (early training, when m, v are biased toward 0) · C) Never · D) Always equally
 
 3. A typical Adam learning rate for transformers is around:
-   - A) `1e-1` · B) `3e-4` ✅ · C) `1` · D) `1e-9`
+   - A) `1e-1` · B) `3e-4` · C) `1` · D) `1e-9`
 
 4. `top_k` sampling:
-   - A) Always picks the argmax · B) Restricts sampling to the top-k probability candidates ✅ · C) Random · D) Beam search
+   - A) Always picks the argmax · B) Restricts sampling to the top-k probability candidates · C) Random · D) Beam search
 
 5. `temperature < 1.0` makes sampling:
-   - A) More random · B) More deterministic / sharper ✅ · C) Identical · D) Slower
+   - A) More random · B) More deterministic / sharper · C) Identical · D) Slower
 
 **Medium (3)**
 
 6. Why divide by `sqrt(v_hat)` in Adam?
-   - A) Numerical hack · B) Adapts the step size per parameter to its recent gradient magnitude ✅ · C) Decorative · D) For variance
+   - A) Numerical hack · B) Adapts the step size per parameter to its recent gradient magnitude · C) Decorative · D) For variance
 
 7. SGD with the same lr typically:
-   - A) Converges faster than Adam · B) Slower than Adam on transformers, because of nonuniform gradient scales ✅ · C) Equal · D) Errors
+   - A) Converges faster than Adam · B) Slower than Adam on transformers, because of nonuniform gradient scales · C) Equal · D) Errors
 
 8. The full microGPT (train5) can run:
-   - A) Only on a GPU cluster · B) On a laptop CPU in pure Python with standard library only ✅ · C) Only on Colab Pro · D) Requires PyTorch
+   - A) Only on a GPU cluster · B) On a laptop CPU in pure Python with standard library only · C) Only on Colab Pro · D) Requires PyTorch
 
 **Hard (2)**
 
 9. *(Week 4 review)* The shape of the attention matrix in 1-head, single-batch is:
-   - A) `(D, D)` · B) `(T, T)` ✅ · C) `(V, V)` · D) `(D_h, D_h)`
+   - A) `(D, D)` · B) `(T, T)` · C) `(V, V)` · D) `(D_h, D_h)`
 
 10. *(Week 4 review)* Why scale by `sqrt(D_h)` before softmax?
-    - A) Decorative · B) Keep variance of dot products O(1) so softmax doesn't saturate ✅ · C) Speed · D) Required by Python
+    - A) Decorative · B) Keep variance of dot products O(1) so softmax doesn't saturate · C) Speed · D) Required by Python
 
 ### Answer Key
 1.B  2.B  3.B  4.B  5.B  6.B  7.B  8.B  9.B  10.B

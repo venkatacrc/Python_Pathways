@@ -127,39 +127,38 @@ You will receive full attendance + assignment credit on completion.
 **Easy (5)**
 
 1. To make a histogram in matplotlib:
-   - A) `plt.histogram(...)` · B) `plt.hist(...)` ✅ · C) `plt.bar(...)` · D) `plt.plot(...)`
+   - A) `plt.histogram(...)` · B) `plt.hist(...)` · C) `plt.bar(...)` · D) `plt.plot(...)`
 
 2. `plt.show()` does:
-   - A) Saves the figure · B) Displays the chart in the notebook ✅ · C) Closes the chart · D) Prints the data
+   - A) Saves the figure · B) Displays the chart in the notebook · C) Closes the chart · D) Prints the data
 
 3. seaborn is built on top of:
-   - A) numpy · B) matplotlib ✅ · C) pandas · D) scipy
+   - A) numpy · B) matplotlib · C) pandas · D) scipy
 
 4. To add a chart title in matplotlib:
-   - A) `plt.label(...)` · B) `plt.title(...)` ✅ · C) `plt.heading(...)` · D) `plt.set_title(...)`
+   - A) `plt.label(...)` · B) `plt.title(...)` · C) `plt.heading(...)` · D) `plt.set_title(...)`
 
 5. A correlation heatmap shows:
-   - A) Heat over time · B) Pairwise correlation between numeric columns ✅ · C) The first 5 rows · D) Missing data only
+   - A) Heat over time · B) Pairwise correlation between numeric columns · C) The first 5 rows · D) Missing data only
 
 **Medium (3)**
 
 6. `sns.boxplot(data=df, x="outcome", y="glucose")` shows:
-   - A) Bar chart of outcomes · B) Glucose distribution stratified by outcome (median, IQR, outliers) ✅ · C) Histogram · D) Scatter
+   - A) Bar chart of outcomes · B) Glucose distribution stratified by outcome (median, IQR, outliers) · C) Histogram · D) Scatter
 
 7. To overlay two histograms with transparency:
-   - A) `alpha=0.5` ✅ · B) `transparent=True` · C) `overlay=True` · D) `alpha="0.5"`
+   - A) `alpha=0.5` · B) `transparent=True` · C) `overlay=True` · D) `alpha="0.5"`
 
 8. The `hue` argument in seaborn:
-   - A) Sets the title color · B) Splits the plot by a categorical column ✅ · C) Sets the y-axis · D) Removes labels
+   - A) Sets the title color · B) Splits the plot by a categorical column · C) Sets the y-axis · D) Removes labels
 
 **Hard (2)**
 
 9. *(Week 1 review)* `df.dropna()` returns:
-   - A) The DataFrame in place · B) A new DataFrame with rows containing NaN dropped ✅ · C) The list of NaN locations · D) An error
+   - A) The DataFrame in place · B) A new DataFrame with rows containing NaN dropped · C) The list of NaN locations · D) An error
 
 10. *(Week 1 review)* In `pd.read_csv(url, names=[...], na_values="?")`:
-    - A) `names` sets column names because the file has no header ✅
-    - B) `names` is the list of users who can read it
+    - A) `names` sets column names because the file has no header    - B) `names` is the list of users who can read it
     - C) `na_values` adds NaN
     - D) Both A and: yes, A is the answer
 

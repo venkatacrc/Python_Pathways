@@ -104,39 +104,38 @@ Each pro stacks 2 transformer blocks. Trains on Tiny Shakespeare. Compares loss 
 **Easy (5)**
 
 1. With `D=64` and `H=4`, the per-head dim is:
-   - A) 4 · B) 16 ✅ · C) 32 · D) 64
+   - A) 4 · B) 16 · C) 32 · D) 64
 
 2. LayerNorm normalizes over:
-   - A) Batch · B) The feature dim of each token, per-token ✅ · C) Heads · D) Time
+   - A) Batch · B) The feature dim of each token, per-token · C) Heads · D) Time
 
 3. Pre-norm means LayerNorm is applied:
-   - A) After the residual sum · B) Inside the residual branch, before the operation ✅ · C) Never · D) Only at the end
+   - A) After the residual sum · B) Inside the residual branch, before the operation · C) Never · D) Only at the end
 
 4. Residual connections:
-   - A) Slow training · B) Help gradient flow + identity shortcut ✅ · C) Are decorative · D) Required only for vision
+   - A) Slow training · B) Help gradient flow + identity shortcut · C) Are decorative · D) Required only for vision
 
 5. The MLP inside a transformer block typically uses:
-   - A) Sigmoid · B) ReLU or GELU ✅ · C) tanh always · D) Linear only
+   - A) Sigmoid · B) ReLU or GELU · C) tanh always · D) Linear only
 
 **Medium (3)**
 
 6. Multiple heads exist because:
-   - A) They look at different subspaces / relationships in parallel ✅ · B) Required by Python · C) Decorative · D) Faster only
+   - A) They look at different subspaces / relationships in parallel · B) Required by Python · C) Decorative · D) Faster only
 
 7. `np.tril` returns:
-   - A) An upper-triangular ones matrix · B) A lower-triangular ones matrix ✅ · C) Random · D) A vector
+   - A) An upper-triangular ones matrix · B) A lower-triangular ones matrix · C) Random · D) A vector
 
 8. Stacking 2 blocks vs 1 typically yields:
-   - A) No change · B) Better loss but more compute ✅ · C) Worse loss · D) Errors
+   - A) No change · B) Better loss but more compute · C) Worse loss · D) Errors
 
 **Hard (2)**
 
 9. *(Week 3 review)* The `Value._backward` closure of `c = a + b` updates:
-   - A) `c.data` · B) `a.grad += c.grad; b.grad += c.grad` ✅ · C) Errors · D) `a.grad = c.grad`
+   - A) `c.data` · B) `a.grad += c.grad; b.grad += c.grad` · C) Errors · D) `a.grad = c.grad`
 
 10. *(Week 3 review)* Why does `__pow__(self, n)` only support `n: float|int`, not `Value`?
-    - A) For simplicity in the educational engine; `Value`-power requires the full `exp(n*log(x))` chain ✅
-    - B) PyTorch limitation · C) Always works · D) Forbidden by Python
+    - A) For simplicity in the educational engine; `Value`-power requires the full `exp(n*log(x))` chain    - B) PyTorch limitation · C) Always works · D) Forbidden by Python
 
 ### Answer Key
 1.B  2.B  3.B  4.B  5.B  6.A  7.B  8.B  9.B  10.A

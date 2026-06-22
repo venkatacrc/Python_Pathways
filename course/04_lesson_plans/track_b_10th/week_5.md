@@ -118,38 +118,38 @@ Each student picks one of:
 **Easy (5)**
 
 1. To install BioPython in Colab:
-   - A) `!pip install biopython` ✅ · B) `pip biopython install` · C) `apt-get biopython` · D) `import biopython`
+   - A) `!pip install biopython` · B) `pip biopython install` · C) `apt-get biopython` · D) `import biopython`
 
 2. `Seq("ATCG").complement()` returns:
-   - A) `"TAGC"` ✅ · B) `"CGAT"` · C) `"GCTA"` · D) `"ATCG"`
+   - A) `"TAGC"` · B) `"CGAT"` · C) `"GCTA"` · D) `"ATCG"`
 
 3. GC content is:
-   - A) The number of G + C bases divided by total bases ✅ · B) Total length · C) Position of the first G · D) None
+   - A) The number of G + C bases divided by total bases · B) Total length · C) Position of the first G · D) None
 
 4. To translate DNA to protein:
-   - A) `seq.complement()` · B) `seq.translate()` ✅ · C) `seq.protein()` · D) `seq.amino()`
+   - A) `seq.complement()` · B) `seq.translate()` · C) `seq.protein()` · D) `seq.amino()`
 
 5. FASTA files are:
-   - A) Spreadsheets · B) Plain-text files with sequences and headers ✅ · C) Image files · D) Compressed archives
+   - A) Spreadsheets · B) Plain-text files with sequences and headers · C) Image files · D) Compressed archives
 
 **Medium (3)**
 
 6. `Seq("ATCG").reverse_complement()` returns:
-   - A) `"GCTA"` · B) `"CGAT"` ✅ · C) `"ATCG"` · D) `"TAGC"`
+   - A) `"GCTA"` · B) `"CGAT"` · C) `"ATCG"` · D) `"TAGC"`
 
 7. To translate up to the first stop codon:
-   - A) `seq.translate(to_stop=True)` ✅ · B) `seq.translate(stop=True)` · C) `seq.until_stop()` · D) `seq[:stop]`
+   - A) `seq.translate(to_stop=True)` · B) `seq.translate(stop=True)` · C) `seq.until_stop()` · D) `seq[:stop]`
 
 8. `gene_seq.count("ATG")` counts:
-   - A) Non-overlapping occurrences of `"ATG"` ✅ · B) All overlapping copies · C) Random count · D) Always 1
+   - A) Non-overlapping occurrences of `"ATG"` · B) All overlapping copies · C) Random count · D) Always 1
 
 **Hard (2)**
 
 9. *(Week 3 review)* `plt.scatter(x, y, c=labels)` colors points by:
-   - A) The order of x · B) The values in `labels` ✅ · C) Random · D) Always blue
+   - A) The order of x · B) The values in `labels` · C) Random · D) Always blue
 
 10. *(Week 3 review)* In `sns.heatmap(corr, annot=True)`, `annot=True` does:
-    - A) Annotates the matrix cells with their numeric values ✅ · B) Adds a title · C) Hides the colorbar · D) Logs the matrix
+    - A) Annotates the matrix cells with their numeric values · B) Adds a title · C) Hides the colorbar · D) Logs the matrix
 
 ### Answer Key
 1.A  2.A  3.A  4.B  5.B  6.B  7.A  8.A  9.B  10.A
