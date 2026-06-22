@@ -187,7 +187,7 @@
           var cls = "";
           if (opt.correct) cls = "correct";
           else if (ans && ans.pickedIdx === oi) cls = "wrong";
-          row.appendChild(el("label", { class: cls, text: " " + opt.text + (opt.correct ? "  ✓" : "") }));
+          row.appendChild(el("label", { class: cls, text: " " + opt.text }));
         });
         qContainer.appendChild(row);
       });
