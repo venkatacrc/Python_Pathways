@@ -185,8 +185,7 @@
         ]);
         q.options.forEach(function (opt, oi) {
           var cls = "";
-          if (opt.correct) cls = "correct";
-          else if (ans && ans.pickedIdx === oi) cls = "wrong";
+          if (ans && ans.pickedIdx === oi && !opt.correct) cls = "wrong";
           row.appendChild(el("label", { class: cls, text: " " + opt.text }));
         });
         qContainer.appendChild(row);
