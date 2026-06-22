@@ -156,18 +156,18 @@ We're replacing Canvas Discussions. The right tool varies by track:
 3. Install the **giscus app** at `https://github.com/apps/giscus` and grant it access to this repo.
 4. Get your config from `https://giscus.app`: pick the repo, the discussion category, and reaction settings.
 5. Copy the resulting `<script src="https://giscus.app/client.js" ...>` block.
-6. Open `overrides/main.html` and add a template `block content` section with the giscus embed conditioned on track (we left a hook in the template). For example, add a per-page partial:
+6. Open `overrides/main.html` and add a `{% block content %}` section with the giscus embed conditioned on track (we left a hook in the template). For example, add a per-page partial:
 
     ```html
-    [%- block content -%]
-      [%- super() -%]
-      [%- if page.meta and page.meta.giscus_category -%]
+    {% block content %}
+      {{ super() }}
+      {% if page.meta and page.meta.giscus_category %}
         <div class="giscus-wrapper">
           <h3>💬 Discussion</h3>
           <script src="https://giscus.app/client.js"
                   data-repo="densesparse/python-pathways"
                   data-repo-id="R_xxx"
-                  data-category="[[- page.meta.giscus_category -]]"
+                  data-category="{{ page.meta.giscus_category }}"
                   data-category-id="DIC_xxx"
                   data-mapping="pathname"
                   data-strict="0"
@@ -180,8 +180,8 @@ We're replacing Canvas Discussions. The right tool varies by track:
                   async>
           </script>
         </div>
-      [%- endif -%]
-    [%- endblock -%]
+      {% endif %}
+    {% endblock %}
     ```
 
 7. In each Track B / C lesson plan front matter, add `giscus_category: "Track B · 10th Graders"` (or C). The discussion auto-appears at the bottom of each weekly page.
